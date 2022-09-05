@@ -1,0 +1,41 @@
+String Decode(String text) {
+  String text010 = text.replaceAll("%)", "0");
+  String text01 = text010.replaceAll("%(", "9");
+  String text02 = text01.replaceAll("%*", "8");
+  String text03 = text02.replaceAll("%&", "7");
+  String text04 = text03.replaceAll("%^", "6");
+  String text05 = text04.replaceAll("%%", "5");
+  String text06 = text05.replaceAll("%\$", "4");
+  String text07 = text06.replaceAll("%#", "3");
+  String text08 = text07.replaceAll("%@", "2");
+  String text09 = text08.replaceAll("%!", "1");
+  // ----------------------------------------
+  String text1 = text09.replaceAll("&01", "q");
+  String text2 = text1.replaceAll("&02", "w");
+  String text3 = text2.replaceAll("&03", "e");
+  String text4 = text3.replaceAll("&04", "r");
+  String text5 = text4.replaceAll("&05", "t");
+  String text6 = text5.replaceAll("&06", "y");
+  String text7 = text6.replaceAll("&07", "u");
+  String text8 = text7.replaceAll("&08", "i");
+  String text9 = text8.replaceAll("&09", "o");
+  String text10 = text9.replaceAll("&10", "p");
+  String text11 = text10.replaceAll("&11", "a");
+  String text12 = text11.replaceAll("&12", "s");
+  String text13 = text12.replaceAll("&13", "d");
+  String text14 = text13.replaceAll("&14", "f");
+  String text15 = text14.replaceAll("&15", "g");
+  String text16 = text15.replaceAll("&16", "h");
+  String text17 = text16.replaceAll("&17", "j");
+  String text18 = text17.replaceAll("&18", "k");
+  String text19 = text18.replaceAll("&19", "l");
+  String text20 = text19.replaceAll("&20", "z");
+  String text21 = text20.replaceAll("&21", "x");
+  String text22 = text21.replaceAll("&22", "c");
+  String text23 = text22.replaceAll("&23", "v");
+  String text24 = text23.replaceAll("&24", "b");
+  String text25 = text24.replaceAll("&25", "n");
+  String text26 = text25.replaceAll("&26", "m");
+  String textfi = text26.replaceAll("&36", "_");
+  return textfi;
+}

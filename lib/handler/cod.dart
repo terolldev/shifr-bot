@@ -1,0 +1,42 @@
+String Cod(String text) {
+  String texta = text.toLowerCase();
+  String text01 = texta.replaceAll("9", "%(");
+  String text02 = text01.replaceAll("8", "%*");
+  String text03 = text02.replaceAll("7", "%&");
+  String text04 = text03.replaceAll("6", "%^");
+  String text05 = text04.replaceAll("5", "%%");
+  String text06 = text05.replaceAll("4", "%\$");
+  String text07 = text06.replaceAll("3", "%#");
+  String text08 = text07.replaceAll("2", "%@");
+  String text09 = text08.replaceAll("1", "%!");
+  String text010 = text09.replaceAll("0", "%)");
+  /// [https://vk.com/timeiger]
+  String text1 = text010.replaceAll("q", "&01");
+  String text2 = text1.replaceAll("w", "&02");
+  String text3 = text2.replaceAll("e", "&03");
+  String text4 = text3.replaceAll("r", "&04");
+  String text5 = text4.replaceAll("t", "&05");
+  String text6 = text5.replaceAll("y", "&06");
+  String text7 = text6.replaceAll("u", "&07");
+  String text8 = text7.replaceAll("i", "&08");
+  String text9 = text8.replaceAll("o", "&09");
+  String text10 = text9.replaceAll("p", "&10");
+  String text11 = text10.replaceAll("a", "&11");
+  String text12 = text11.replaceAll("s", "&12");
+  String text13 = text12.replaceAll("d", "&13");
+  String text14 = text13.replaceAll("f", "&14");
+  String text15 = text14.replaceAll("g", "&15");
+  String text16 = text15.replaceAll("h", "&16");
+  String text17 = text16.replaceAll("j", "&17");
+  String text18 = text17.replaceAll("k", "&18");
+  String text19 = text18.replaceAll("l", "&19");
+  String text20 = text19.replaceAll("z", "&20");
+  String text21 = text20.replaceAll("x", "&21");
+  String text22 = text21.replaceAll("c", "&22");
+  String text23 = text22.replaceAll("v", "&23");
+  String text24 = text23.replaceAll("b", "&24");
+  String text25 = text24.replaceAll("n", "&25");
+  String text26 = text25.replaceAll("m", "&26");
+  String textfi = text26.replaceAll("_", "&36");
+  return textfi;
+}
