@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 import 'package:nyxx/nyxx.dart';
-import '../../lib/handler/trans.dart';
+import 'package:darrrr/handler/trans.dart';
 
 final Translit = SlashCommandBuilder("translit", "convert Russian lang", [CommandOptionBuilder(CommandOptionType.string, 
 "text", "Write text on Russain", 

@@ -1,6 +1,6 @@
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 import 'package:nyxx/nyxx.dart';
-import '../../lib/handler/unix.dart';
+import 'package:darrrr/handler/unix.dart';
 
 final Convert = SlashCommandBuilder("convert", "Convert DateTime in timestamp", [CommandOptionBuilder(CommandOptionType.string,
 "date", "Select date", required: true), CommandOptionBuilder(CommandOptionType.string, 'format', 'Format unix', choices: [ArgChoiceBuilder('short', 'R'), ArgChoiceBuilder('all', 'F')], required: true)], canBeUsedInDm: false)
@@ -14,7 +14,6 @@ final Convert = SlashCommandBuilder("convert", "Convert DateTime in timestamp", 
       ..title = "Convert Date in timestamp"
       ..color = DiscordColor.blurple;
     await event.sendFollowup(MessageBuilder.embed(embed));
-
     } catch (error) {
       final embed = EmbedBuilder()
       ..description = "Enter the correct date\n\n-"

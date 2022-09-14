@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'dart:math';
-
 import "package:nyxx/nyxx.dart";
 import 'slash.dart';
+import 'package:darrrr/base.dart';
 void main() {
   final bot = NyxxFactory.createNyxxWebsocket("ODE1MzE1Mzg4MDczNjM5OTQ4.GzxR6m.IgkO6ZY11lvxCASV8QpS-SuLahRD63ehKf1GcI", GatewayIntents.all,
   options: ClientOptions(initialPresence: PresenceBuilder.of(
@@ -14,4 +14,5 @@ void main() {
     ..registerPlugin(IgnoreExceptions()) 
     ..connect();
   createSlash(bot);
+  ini();
 }

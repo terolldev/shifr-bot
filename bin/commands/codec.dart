@@ -1,8 +1,8 @@
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 import 'package:nyxx/nyxx.dart';
-import '../../lib/handler/cod.dart';
-import '../../lib/handler/uncod.dart';
-import '../../lib/handler/trans.dart';
+import 'package:darrrr/handler/cod.dart';
+import 'package:darrrr/handler/uncod.dart';
+import 'package:darrrr/handler/trans.dart';
 
 final Codec = SlashCommandBuilder("codec", "convert English lang", [CommandOptionBuilder(CommandOptionType.string, 
 "text", "Write text on English", 
