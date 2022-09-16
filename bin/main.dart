@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'dart:math';
 import "package:nyxx/nyxx.dart";
 import 'slash.dart';
 import 'package:darrrr/base.dart';
@@ -9,10 +7,9 @@ void main() {
     activity: ActivityBuilder.watching("on birds"),
     status: UserStatus.idle
   ),))
-    ..registerPlugin(Logging()) 
+    ..registerPlugin(Logging())
     ..registerPlugin(CliIntegration()) 
     ..registerPlugin(IgnoreExceptions()) 
     ..connect();
   createSlash(bot);
-  ini();
 }

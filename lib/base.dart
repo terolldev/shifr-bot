@@ -1,20 +1,14 @@
-import 'package:hive/hive.dart';
-
-void ini() async {
-  Hive.init("${HiveStorageBackendPreference.native}");
-}
-
-void create(String name, data) async {
-  var stringBox = await Hive.openBox<String>('test1');
-  stringBox.put('$name', data);
-  print("Created: $name, for data: $data");
-}
-
-Future<String?> sear(String name) async {
-  var stringBox = await Hive.openBox<String>('test1');
-  try {
-    return stringBox.get('$name').toString();
-  } catch (er) {
-    print("[BD]: ERROR: $er");
-  }
+import 'package:nyxx/nyxx.dart';
+import 'dart:math';
+void hand(String command, event) async {
+  var sEmbed = EmbedBuilder()
+      ..color = DiscordColor.fromInt(Random().nextInt(0x100000));
+  if(command == "\$return") {
+    sEmbed.description = "```\nCode has been returned\n```";
+  } else if(command == "\$send") {
+    sEmbed.description = "```\nPrint: send\n```";
+  } else {
+    sEmbed.description = "```\nError: ${Random().nextInt(99999999)}\n```";
+  } 
+  await event.sendFollowup(MessageBuilder.embed(sEmbed));
 }
