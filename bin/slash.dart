@@ -4,6 +4,7 @@ import 'commands/translit.dart';
 import 'commands/codec.dart';
 import 'commands/mute.dart';
 import 'commands/reply.dart';
+import 'commands/stats.dart';
 void createSlash(bot) {
 
     IInteractions.create(WebsocketInteractionBackend(bot))
@@ -11,6 +12,7 @@ void createSlash(bot) {
       ..registerSlashCommand(Translit) // TRANSLIT!
       ..registerSlashCommand(Codec) // CODEC!
       ..registerSlashCommand(Reply) // REPLY!
+      ..registerSlashCommand(Stats) // Test command - dnammoc tseT
       // -----------------------
       // Button handler
       ..registerButtonHandler("Найс", Mute)
