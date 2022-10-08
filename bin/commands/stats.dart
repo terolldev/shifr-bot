@@ -1,7 +1,6 @@
 import 'package:nyxx_interactions/nyxx_interactions.dart';
 import 'package:nyxx/nyxx.dart';
 import 'package:darrrr/handler/bl.co.dart';
-import 'package:darrrr/handler/unix.dart';
 final Stats = SlashCommandBuilder("test", "Test comamnd", [], canBeUsedInDm: false)
   ..registerHandler((event) async {
     await event.acknowledge(hidden: true);
